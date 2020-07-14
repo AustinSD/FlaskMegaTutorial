@@ -1,0 +1,97 @@
+2020-07-14 13:47:39,441 ERROR: Exception on /explore [GET] [in /home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/austin/Desktop/LearnFlask/microblog/app/routes.py", line 34, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/austin/Desktop/LearnFlask/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/austin/Desktop/LearnFlask/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/austin/Desktop/LearnFlask/microblog/app/templates/index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-07-14 13:49:04,668 INFO: Microblog startup [in /home/austin/Desktop/LearnFlask/microblog/app/__init__.py:30]
+2020-07-14 13:52:06,679 INFO: Microblog startup [in /home/austin/Desktop/LearnFlask/microblog/app/__init__.py:30]
+2020-07-14 13:53:19,086 INFO: Microblog startup [in /home/austin/Desktop/LearnFlask/microblog/app/__init__.py:30]
+2020-07-14 14:00:32,090 INFO: Microblog startup [in /home/austin/Desktop/LearnFlask/microblog/app/__init__.py:30]
+2020-07-14 14:00:33,401 ERROR: Exception on /explore [GET] [in /home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/austin/Desktop/LearnFlask/microblog/app/routes.py", line 37, in explore
+    return render_template('index.html', title='Explore', posts=posts)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/austin/Desktop/LearnFlask/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/austin/Desktop/LearnFlask/microblog/app/templates/base.html", line 32, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/austin/Desktop/LearnFlask/microblog/app/templates/index.html", line 20, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2020-07-14 14:00:58,623 INFO: Microblog startup [in /home/austin/Desktop/LearnFlask/microblog/app/__init__.py:30]
+2020-07-14 14:00:59,967 ERROR: Exception on /index [GET] [in /home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/austin/Desktop/LearnFlask/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/austin/Desktop/LearnFlask/microblog/app/routes.py", line 28, in index
+    posts = current_user.followed_posts().paginate(page, app.config['POSTS_PER_PAGE', False])
+KeyError: ('POSTS_PER_PAGE', False)
+2020-07-14 14:01:24,767 INFO: Microblog startup [in /home/austin/Desktop/LearnFlask/microblog/app/__init__.py:30]
